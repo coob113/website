@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VR Breathe</title>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+</head>
+ 
+<body>
+    <a-scene class="fullscreen" >
+        
+        <a-entity position="0 1.61 0" camera="userHeight:0.01" look-controls="" data-aframe-inspector-original-camera=""></a-entity>
+        
+        <a-plane height="100" width="100" rotation="-90 0 0" ></a-plane>
+
+        <a-entity position="0 1.6 -2" scale="0.02 0.02 0.02" gltf-model="https://raw.githubusercontent.com/coob113/breathe/master/scene.gltf">
+            <a-animation attribute="rotation" dur="5000" fill="forwards" to="0 1080 0" repeat="indefinite" direction="alternate-reverse"></a-animation>
+        </a-entity>
+        
+        <a-sky>
+        </a-sky>
+    </a-scene>
+  
+   
+</body>
+</html>
