@@ -8,16 +8,18 @@
 <body>
     <a-scene class="fullscreen" >
         
-        <a-entity position="0 1.61 0" camera="userHeight:0.01" look-controls="" data-aframe-inspector-original-camera=""></a-entity>
-        
-        <a-plane height="100" width="100" rotation="-90 0 0" ></a-plane>
+<a-entity camera="active: true" look-controls wasd-controls position="0 1.6 0" data-aframe-default-camera></a-entity>
 
-        <a-entity position="0 1.6 -2" scale="1 1 1" gltf-model="https://raw.githubusercontent.com/coob113/website/master/assets/model_1/model.gltf">
-            <a-animation attribute="rotation" dur="5000" fill="forwards" to="0 1080 0" repeat="indefinite" direction="alternate-reverse"></a-animation>
-        </a-entity>
         
-        <a-sky>
-        </a-sky>
+        <a-plane height="100" width="100" rotation="-90 0 0" color="#CCC" ></a-plane>
+
+        <a-entity position="0 1.6 2" scale="0.4 0.4 0.4" rotation="0 180 0" gltf-model="https://raw.githubusercontent.com/coob113/website/master/assets/model_1/model.gltf"></a-entity>
+        
+        <a-entity position="0 0 -2" scale="1.2 1.2 1.2" gltf-model="https://raw.githubusercontent.com/coob113/website/master/assets/model_2/model.gltf"></a-entity>
+        
+        <a-entity position="-2 0 0" scale="0.5 0.5 0.5" gltf-model="https://raw.githubusercontent.com/coob113/website/master/assets/model_3/model.gltf"></a-entity>
+        
+        <a-sky></a-sky>
     </a-scene>
   
    
